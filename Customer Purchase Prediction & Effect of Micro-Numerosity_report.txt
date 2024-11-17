@@ -1,0 +1,29 @@
+Final Report
+Model Training and Results
+After defining the target variable (Purchased) and selecting relevant features (Age, Gender, Education, Review), the dataset was preprocessed by encoding categorical variables. The dataset was then split into training (80%) and testing (20%) sets. A Random Forest Classifier was selected and trained on the training data.
+
+The model training and prediction yielded the following results:
+
+Predicted values: ['No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes']
+Model Evaluation
+The performance of the model was evaluated using the following metrics:
+
+Confusion Matrix:
+
+[[2, 1],
+ [4, 3]]
+Accuracy Score: 0.5
+Classification Report:
+
+              precision    recall  f1-score   support
+
+          No       0.33      0.67      0.44         3
+         Yes       0.75      0.43      0.55         7
+
+    accuracy                           0.50        10
+   macro avg       0.54      0.55      0.49        10
+weighted avg       0.62      0.50      0.52        10
+These results indicate that the model's accuracy is 50%, with a recall of 67% for "No" and 43% for "Yes." The precision is higher for "Yes" (75%) compared to "No" (33%).
+
+Conclusion
+The Random Forest Classifier model shows moderate performance in predicting customer purchases. The model could be further improved by exploring more sophisticated feature engineering techniques, tuning hyperparameters, or trying different machine learning algorithms to enhance predictive accuracy and reliability.
